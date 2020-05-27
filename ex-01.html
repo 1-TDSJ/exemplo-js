@@ -4,7 +4,10 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width,initial-scale=1">
      <link rel="stylesheet" href="./css/style-base.css" type="text/css">
+
      <title>EXEMPLO-JS</title>
+
+
    </head>
    <body>
      <div id="container">
@@ -32,8 +35,9 @@
             EM LINHA em um ELEMENTO HTML.
         -->
           <button type="button" name="button" onclick="alert('Olá Mundo!!')">Olá Mundo!</button>
+          <button type="button" name="button" onclick="document.getElementById('conteudo').innerHTML = 'Olá Mundo - Este Texto foi escrito por javascript!'">CLICK</button>
        </div>
-       <div class="conteudo">
+       <div id="conteudo">
           <!--
           2º Forma de utilização do JAVASCRIPT
             EM BLOCO <script type="text/javascript"></script>.
@@ -58,11 +62,63 @@
             console.log("Nome: " + nome +"\nIdade: " + idade +"\nGenero: "+genero);
 
             //Verificando o valor de genero e devolvendo um valo de acordo.
-            if(genero == 'm'){
+            if(genero === 'm'){
               console.info("Nome: " + nome +"\nIdade: " + idade +"\nGenero: Masculino.");
             }else{
               console.error("Nome: " + nome +"\nIdade: " + idade +"\nGenero: Indefinido.");
             }
+
+            //Comparação NORMAL com ==
+            //Compara só o contéudo.
+            var nr  = 20;
+            var str = "20";
+
+            if(nr == str){
+              console.log("Validou em: "+true);
+            }else {
+              console.log("Validou em: "+false);
+            }
+
+            //Comparação ESTRITA com ===
+            //Compara o conteúdo e o tipo da variável.
+            var nr  = 20;
+            var str = "20";
+
+            if(nr === str){
+              console.log("Validou em: "+true);
+            }else {
+              console.log("Validou em: "+false);
+            }
+
+            //Utilizando operadores aritméticos!
+
+            //Imprime o valor 3;
+            console.log(6 / 2);
+            //Imprime o valor 12;
+            console.log(6 * 2);
+            //Imprime o valor 8;
+            console.log(6 + 2);
+            //Imprime o valor 4;
+            console.log(6 - 2);
+
+            //Operação em módulo
+            console.log("Módulo: "+ 37434873 % 2);
+
+            //if ternário
+            var resultado  = (37434873 / 7) % 2 ? "IMPAR":"PAR";
+            console.log("Módulo: "+ resultado);
+
+            //Operadores de desigualdade.
+            var nome1 = "Alexandre";
+            var nome2 = "Alex";
+
+            if(nome1 != nome2 ){
+                console.log("Os nomes são diferentes!!");
+            }else {
+              console.log("Os nomes são iguais!");
+            }
+
+            
 
           </script>
 
@@ -70,6 +126,11 @@
 
           <button type="button" name="button" onclick="alert('Olá Mundo!!')">Olá Mundo!</button>
        </div>
+       <script type="text/javascript">
+       //Simulando carga antecipada Javascript!
+          document.getElementById('conteudo').innerHTML = 'Olá Mundo - Este Texto foi escrito por javascript!'
+       </script>
+
      </div>
    </body>
 </html>
