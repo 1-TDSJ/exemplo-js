@@ -1,0 +1,75 @@
+  <!Doctype html>
+  <html lang="pt-br" dir="ltr">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1">
+     <link rel="stylesheet" href="./css/style-base.css" type="text/css">
+     <title>EXEMPLO-JS</title>
+   </head>
+   <body>
+     <div id="container">
+       <header>
+         <nav>
+           <ul class="menu">
+             <li><a href="index.html">Início</a></li>
+             <li><a href="ex-01.html">Exemplo-1</a></li>
+             <li><a href="ex-02.html">Exemplo-2</a></li>
+             <li><a href="ex-03.html">Exemplo-3</a></li>
+             <li><a href="ex-04.html">Exemplo-4</a></li>
+           </ul>
+         </nav>
+       </header>
+
+       <!-- UTILIZAÇÃO DO JAVASCRIPT -->
+       <!-- Podemos de utilizar de 3 formas
+          1 - Em linha nos elementos HTML.
+          2 - Em bloco no documento HTML.
+          3 - Ou em um arquivo Externo JAVASCRIPT.
+      -->
+       <div class="conteudo">
+          <!--
+          1º Forma de utilização do JAVASCRIPT
+            EM LINHA em um ELEMENTO HTML.
+        -->
+          <button type="button" name="button" onclick="alert('Olá Mundo!!')">Olá Mundo!</button>
+       </div>
+       <div class="conteudo">
+          <!--
+          2º Forma de utilização do JAVASCRIPT
+            EM BLOCO <script type="text/javascript"></script>.
+        -->
+          <script type="text/javascript">
+            //Isso é um comentário de linha no JAVASCRIPT...
+
+            /**
+            É um comentário de várias linhas.
+            Ou um comentário de bloco.
+            **/
+
+            //Aqui nesta área chamamos de escopo do JAVASCRIPT.
+            //Aqui podemos declarar variáveis...
+
+            //Declarando variáveis GLOBAIS!!!
+            var nome   = "Dijalbas";
+            var idade  = 56;
+            var genero = 'z';
+
+            //Imprimindo as variáveis no console do navegador...
+            console.log("Nome: " + nome +"\nIdade: " + idade +"\nGenero: "+genero);
+
+            //Verificando o valor de genero e devolvendo um valo de acordo.
+            if(genero == 'm'){
+              console.info("Nome: " + nome +"\nIdade: " + idade +"\nGenero: Masculino.");
+            }else{
+              console.error("Nome: " + nome +"\nIdade: " + idade +"\nGenero: Indefinido.");
+            }
+
+          </script>
+
+
+
+          <button type="button" name="button" onclick="alert('Olá Mundo!!')">Olá Mundo!</button>
+       </div>
+     </div>
+   </body>
+</html>
