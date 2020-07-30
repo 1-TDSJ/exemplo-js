@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pedro86396.css">
+    <title>Exercicios JavaScript</title>
+</head>
+<body>
+    <div id="div-principal"></div>
+    <p id="p-principal"></p>
+    <span id="span-principal"></span>
+
+    <img src="img/lampada.gif" alt="Imagem ilustrativa de uma lâmpada" class="lampadaOff">
+
+    <button type="submit" id="botaoVerde">Verde</button>
+    <button type="submit" id="botaoVermelho">Vermelho</button>
+
+    <div id="resultado"></div>
+
+    <button type="submit" id="botaoDeTexto">Botão Texto</button>
+
+    <script>
+        //Exercício (1)
+        console.log("Olá, mundo!");
+
+        //Exercício (2)
+        var n1 = 10;
+        var n2 = 5;
+        var res = n1+n2; 
+        console.log(n1+" + "+n2+" = "+res);
+
+        //Exercício (3)
+        var div = document.querySelector("#div-principal");
+        var p = document.querySelector("#p-principal");
+        var span = document.querySelector("#span-principal");
+
+        div.innerHTML = "Esta é a div principal da página HTML, inserida através de JavaScript";
+        p.innerHTML = "Este é o parágrafo principal da página HTML, inserida através de JavaScript";
+        span.innerHTML = "Este é o span principal da página HTML, inserida através de JavaScript ";
+
+        var tamanhoDiv = div.innerHTML.length;
+        var tamanhoP = p.innerHTML.length;
+        var tamanhoSpan = span.innerHTML.length;
+
+        console.log("A div possui: " + tamanhoDiv + " caracteres.");
+        console.log("O parágrafo possui: " + tamanhoP + " caracteres.");
+        console.log("O span possui: " + tamanhoSpan + " caracteres");
+    </script>
+
+    <script src="js/pedro86396.js"></script>
+</body>
+</html>

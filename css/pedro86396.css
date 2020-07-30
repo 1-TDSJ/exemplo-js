@@ -1,0 +1,30 @@
+.lampadaOff {
+    margin: 25px 70px;
+    display: block;
+}
+
+#botaoVerde {
+    margin-left: 45px;
+}
+
+#botaoVermelho {
+    margin-left: 45px;
+}
+
+.verde {
+    color: white;
+    background-color: green;
+}
+
+.vermelho {
+    color: white;
+    background-color: red;
+}
+
+#resultado {
+    margin: 20px 0;
+}
+
+#botaoDeTexto {
+    margin-left: 80px;
+}
